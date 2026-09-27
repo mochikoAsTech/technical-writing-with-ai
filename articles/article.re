@@ -1,20 +1,9 @@
+= 生成AIとテクニカルライティング
 
-= 章タイトル
+生成AIを使って技術ブログや技術書を書くことについて。
 
-ここからすべてが始まる！
+//pagebreak
 
-== 節のキャプション
+== 節タイトル
 
-画像はarticlesフォルダの下のimagesフォルダに入れて、こんな風に指定すると表示されます。（@<img>{sample-diagram}）
-
-//image[sample-diagram][画像はここに表示される][scale=0.8]{
-//}
-
-注釈を書くこともできます。@<fn>{footnote-sample}
-
-//footnote[footnote-sample][注釈はこんな風に表示される]
-
-Re:VIEWの文法について詳しくは、Re:VIEW フォーマットガイドを参照してください。
-
- * Re:VIEW フォーマットガイド
- ** @<href>{https://github.com/kmuto/review/blob/master/doc/format.ja.md}
+ねこちゃんは@<ttb>{かわいい}です。
