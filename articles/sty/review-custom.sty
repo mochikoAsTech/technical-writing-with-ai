@@ -1,1 +1,12 @@
 % for user-defined macro
+
+% Keep inline icons at the surrounding text size.
+\renewcommand{\reviewicon}[1]{\raisebox{-.1zw}{\includegraphics[height=1zw]{#1}}}
+
+% Match figure references to LaTeX captions when a file contains several chapters.
+\renewcommand{\reviewimageref}[2]{\review@intn@image \ref{#2}}
+
+% Keep the caption label visible to the following \label inside reviewimage.
+\renewcommand{\reviewimagecaption}[1]{%
+  \def\captionhead{\sffamily{\color{black!30!white}{▲}}}%
+  \caption{#1}}

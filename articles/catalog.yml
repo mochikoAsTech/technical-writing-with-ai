@@ -6,6 +6,10 @@ PREDEF:
 CHAPS:
   - article.re
 
+APPENDIX:
+# ひとりBookathon完全サポート手順書
+  - bookathon.re
+
 POSTDEF:
 # あとがき
   - postscript.re

@@ -22,8 +22,8 @@ bookname: technical-writing-with-ai
 language: ja
 
 # 書名
-booktitle: {name: "生成AIと一緒に『分かりやすい文章を書く』ためのテクニカルライティング（仮題）", file-as: "テクニカルライティングウィズエーアイ"}
-subtitle: {name: "副題", file-as: "フクダイ"}
+booktitle: {name: "生成AIと「書く」", file-as: "セイセイエーアイトカク"}
+subtitle: {name: "技術書の原稿は手で書くかAIに書かせるか", file-as: "ギジュツショノゲンコウハテデカクカエーアイニカカセルカ"}
 
 # 著者名。「, 」で区切って複数指定できる
 aut: [{name: "mochikoAsTech", file-as: "モチコアズテック"}]
