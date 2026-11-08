@@ -121,7 +121,7 @@ gh auth login -h github.com -p https -w
  5. 自動的にブラウザが立ち上がり、GitHubのデバイスアクティベーション（Device Activation）のページが開きます。「Signed in as ○○」で自分のGitHubアカウントが表示されたら「Continue」を押します。
  6. コピーしておいたワンタイムコードを入力し、「Continue」を押します（@<img>{bookathon-github-device-activation}）。
 
-//image[bookathon-github-device-activation][GitHubのワンタイムコード入力画面][scale=0.9]{
+//image[bookathon-github-device-activation][GitHubのワンタイムコード入力画面][scale=0.6]{
 //}
 
 VS Codeのターミナルで「Logged in as ○○」と表示されたら、GitHubの認証も完了です。
