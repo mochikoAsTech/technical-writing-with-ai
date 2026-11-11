@@ -4,7 +4,9 @@ PREDEF:
   - introduction.re
 
 CHAPS:
-  - article.re
+  - write-with-ai.re
+  - knowhow.re
+  - tips-for-stuck.re
 
 APPENDIX:
 # ひとりBookathon完全サポート手順書
