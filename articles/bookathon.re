@@ -99,7 +99,7 @@ GitHubのサインアップページ（@<href>{https://github.com/signup}）か�
 
 ==== ghをインストールする
 
-@<tt>{gh}は、ターミナルからGitHubの操作をするために必要なコマンドです。GitHub CLI公式サイト（@<href>{https://cli.github.com/}）から自身の環境にあったインストーラーをダウンロードします（@<img>{bookathon-gh-download}）。
+@<tt>{gh}は、ターミナルからGitHubの操作をするために必要なコマンドです。GitHub CLI公式サイト（@<href>{https://cli.github.com/}）のプルダウンで自分の環境を選ぶと、その環境に合わせたインストール用のコマンドが表示されます（@<img>{bookathon-gh-download}）。
 
 //image[bookathon-gh-download][ghのダウンロード画面][scale=0.7]{
 //}
@@ -190,6 +190,11 @@ GitHubにログインした状態のブラウザで、Re:VIEWテンプレート�
 「Create a new repository」のページで、Repository ownerを自分のGitHubアカウントにして、name（リポジトリ名）を「sample-book」にします（@<img>{bookathon-github-create-repository}）。
 
 //image[bookathon-github-create-repository][リポジトリの所有者と名前を指定する][scale=0.8]{
+//}
+
+リポジトリの公開範囲はデフォルトでPublic（公開）になっているので、原稿を公開せずにひとりで書き進めたい場合は、Choose visibility（公開範囲）を「Private（非公開）」にします（@<img>{bookathon-github-visibility}）。
+
+//image[bookathon-github-visibility][リポジトリを非公開にする][scale=0.6]{
 //}
 
 「Create repository」のボタンをクリックして少し待ちます。自分用のリポジトリが出来上がると、次のようなURLのページが表示されます。「ユーザーネーム」の部分は自分のGitHubのユーザーネームになります。
