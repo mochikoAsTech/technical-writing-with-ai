@@ -73,3 +73,13 @@ mochikoAsTech
 不正確あるいは誤認と思われる箇所がありましたら、必要に応じて適宜改訂を行ないますのでGitHubのIssueやPull Requestで筆者までお知らせいただけますと幸いです。
 
 @<href>{https://github.com/mochikoAsTech/technical-writing-with-ai}
+
+//pagebreak
+
+　
+
+//pagebreak
+
+　
+
+//pagebreak
