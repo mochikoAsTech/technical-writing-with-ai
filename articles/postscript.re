@@ -1,5 +1,7 @@
 ﻿= あとがき
 
+書き終わった！書き終わった！うれしい！原稿を書き終わって大変うれしいので、技術書とはまったく関係ない話をします。
+
 最近、品川プリンスホテル内の常設シアターで毎日開催されている「美少女戦士セーラームーン -Shining Theater Shinagawa Tokyo-」（以下STST）にどハマりしています。いわゆるセラミュ（セーラームーンミュージカル）の系譜なんですが、キャストも衣装も小道具も音楽もコレオグラフィもすごくいい！
 
 約1時間と短めの公演で、前半は「主人公が恋人や友人に不満を抱いて愚痴ったら、生成AIが完璧な恋人や友人を作ってくれる」という大変現代的なストーリーパート、後半は撮影可のライブパート。特にTeam Gold Moonのセーラーウラヌスが「本物そっくり……！」と人気を博し、SNSでもショート動画がばんばん流れてくるので、見たことがある方もいるかもしれません。
@@ -32,23 +34,17 @@ mochikoAsTech
 本書（紙の書籍）をお買い上げいただいた方は、下記のURLからPDF版を無料でダウンロードできます。
 
  * ダウンロードURL
- ** @<href>{https://mochikoastech.booth.pm/items/*******}
+ ** @<href>{https://mochikoastech.booth.pm/items/9140410}
  * パスワード
- ** @<ttb>{****}
+ ** @<ttb>{MusicOfTheSpheres2026}
 
 == Special Thanks:
 
  * Special Thanksのお名前
 
-=== レビュアー
-
- * レビュアーのお名前
-
 //pagebreak
 
 === 参考文献
 
- * センスは知識からはじまる - 水野学
- ** @<href>{https://publications.asahi.com/product/15849.html}
- * 日本語スタイルガイド(第3版) - 一般財団法人テクニカルコミュニケーター協会
- ** @<href>{https://jtca.org/learn-tc/publication/guide_jsg/}
+ * UNIXという考え方: その設計思想と哲学 - Mike Gancarz（著）、芳尾 桂（翻訳）
+ ** @<href>{https://shop.ohmsha.co.jp/shopdetail/000000000309/}

@@ -1,6 +1,6 @@
 ﻿= GitHubとRe:VIEWで執筆環境を構築しよう
 
-自分のパソコンに自動組版の環境を作って技術書を書いてみよう。
+自動組版の環境を作って技術書を書いてみよう。
 
 //pagebreak
 
@@ -10,21 +10,21 @@
 
 Bookathonは、3日間で技術書を書き上げるハッカソンイベントです。金曜の夜から始めて、日曜の午後には本を完成させます。
 
-「そんな短期間で本なんか書けるの？！」と思われるかもしれませんが、だったら執筆のために長期間を確保できるかと問われたら殆どの人が難しいはずです。「時間ができたら」「いつか機会があれば」と思っていても、技術書を書く時間や機会というものはいつまでも訪れません。
+「そんな短期間で本なんか書けるの？！」と思われるかもしれませんが、逆に「執筆のために長期間を確保できるか」と問われると、それはそれで殆どの人が難しいはずです。「時間ができたら」「いつか機会があれば」と思っていても、技術書を書く時間や機会というものは待っているだけではいつまでも訪れません。
 
-ドアから人が溢れかけているような満員電車でも、「絶対にこれに乗るんだ」と強い気持ちで「すみません、乗ります！」と声をかけてぐっと自分の体を押し込めば、なんとかかんとか乗れてしまうように、時間も機会も強い気持ちで作らないかぎり得られないのです。そして筆者を含め、殆どの人は〆切もないのに頑張れるほど強い精神力がありません。
+ドアから人が溢れかけているような満員電車でも、「絶対にこれに乗るんだ」という強い気持ちで「すみません、乗ります！」と声をかけてぐっと自分の体を押し込めば、なんとかかんとか乗れてしまうように、時間も機会も強い気持ちで作らないかぎり得られないのです。そして筆者を含め、殆どの人は〆切もないのに頑張れるほど強い精神力は持ち合わせていません。
 
-という訳で、まずは〆切を作りましょう。間に合うかどうかではなく、間に合わせるのです。
+という訳で、まずは〆切を作りましょう。間に合うかどうかではなく、間に合わせるのです。〆切を作るいちばん手軽な方法は「今週末、ひとりでBookathonをやってみる」です。
 
-間に合わせるためには、「書く」ことに集中せねばなりません。「書く」こと以外の些末な部分に時間を取られていると間に合わなくなります。なので、Bookathonでは執筆環境を書籍執筆ツールのGitHubとRe:VIEW（リビュー）@<fn>{review}の組み合わせで統一しています。
+〆切に間に合わせるためには、「書く」ことに集中せねばなりません。「書く」こと以外の些末な部分に時間を取られていると間に合わなくなります。なので、Bookathonでは執筆環境をGitHubと書籍執筆ツールのRe:VIEW（リビュー）@<fn>{review}の組み合わせで統一しています。
 
-//footnote[review][電子書籍と紙書籍の両方に対応した自動組版のツール。 @<href>{https://reviewml.org/}]
+//footnote[review][Re:VIEW（リビュー）は電子書籍と紙書籍の両方に対応した自動組版のツールです。 @<href>{https://reviewml.org/}]
 
-いずれも無料で使用でき、環境構築も1時間程度あれば可能です。あなたも今週末にひとりBookathonをやってみませんか？
+いずれも無料で使用でき、環境構築も1時間程度あれば可能です。あなたも早速、今週末にひとりBookathonをやってみませんか？
 
 == 本の執筆環境を構築する
 
-BookathonではRe:VIEWという書籍制作のためのツールを使用します。MarkdownファイルをデプロイすることでHTMLが生まれるように、原稿をRe:VIEW記法で書いてデプロイすることで「本の見た目」に自動組版されたPDFファイルが生成できます。このPDFは、簡単な設定で電子書籍にも、印刷所に入稿して作る紙書籍にも対応可能です。さらにGitHubも組み合わせて使うことで、原稿の共有やバージョン管理、校正などがやりやすくなります。
+BookathonではRe:VIEWという書籍制作のためのツールを使用します。Markdownファイルをデプロイすることで静的ページのHTMLが生まれるように、原稿をRe:VIEW記法で書いてビルドすることで「本の見た目」に自動組版されたPDFファイルが生成できます。このPDFは、簡単な設定で電子書籍にも、印刷所に入稿して作る紙書籍にも対応可能です。さらにGitHubも組み合わせて使うことで、原稿の共有やバージョン管理、校正などがやりやすくなります。
 
 この付録では、個人のパソコンにおいて、できるだけ短時間で「本を書く」のに必要な環境を構築することを最優先として手順を解説します。
 
@@ -38,7 +38,7 @@ GitHubとRe:VIEWを使うために必要な5つの道具を準備しておきま
  4. gh
  5. Docker
 
-環境によってそれぞれの道具が既に使える状態であれば、該当するセクションは読み飛ばして構いません。
+お手元の環境で、それぞれの道具が既に使える状態であれば、該当するセクションは読み飛ばして構いません。
 
 ==== Visual Studio Code（エディタ）をインストールする
 
@@ -47,7 +47,9 @@ Visual Studio Code（以下、VS Code）は原稿を書くためのエディタ�
 //image[bookathon-vscode-download][Visual Studio Codeのダウンロード画面][scale=0.8]{
 //}
 
-ダウンロードしたらインストーラーの手順に従ってインストールします。VS Codeが起動したら、左側にある拡張機能の四角いアイコンを開きます。「Japanese Language Pack」を検索してインストールすると、メニューを日本語にできます（@<img>{bookathon-vscode-japanese-pack}）。
+ダウンロードしたらインストーラーの手順に従ってインストールします。
+
+インストール後、VS Codeが起動したら、左側にある拡張機能の四角いアイコンを開きます。「Japanese Language Pack」を検索してインストールすると、メニューを日本語にできます（@<img>{bookathon-vscode-japanese-pack}）。
 
 //image[bookathon-vscode-japanese-pack][Japanese Language Packのインストール][scale=0.6]{
 //}
@@ -58,14 +60,16 @@ Visual Studio Code（以下、VS Code）は原稿を書くためのエディタ�
 
 @<tt>{git}は、書いた原稿をGitHubで共有したりするために必要なコマンドです。
 
-Windowsの場合は、Git公式サイトのWindows向けインストールページ（@<href>{https://git-scm.com/install/windows}）にアクセスして、「Click here to download」からインストーラーをダウンロードします（@<img>{bookathon-git-download}）。
+===== Windowsの場合
+
+Git公式サイトのWindows向けインストールページ（@<href>{https://git-scm.com/install/windows}）にアクセスして、「Click here to download」からインストーラーをダウンロードします（@<img>{bookathon-git-download}）。
 
 //image[bookathon-git-download][Windows用Gitのダウンロード画面][scale=0.7]{
 //}
 
 インストーラーの手順に従ってインストールします。gitのインストールができたら、VS Codeを一度閉じてから起動しなおしてください。
 
-起動したVS Codeの上部にあるメニューバーから「表示」＞「ターミナル」を選択して、ターミナルを表示させます。VS Codeのターミナルで次のコマンドを入力してエンターを押し、何かしらのバージョン情報が表示されることを確認してください。
+再起動したVS Codeの上部にあるメニューバーから「表示」＞「ターミナル」を選択して、ターミナルを表示させます。VS Codeのターミナルで次のコマンドを入力してエンターを押し、何かしらのバージョン情報が表示されることを確認してください。
 
 //cmd{
 git --version
@@ -77,7 +81,9 @@ Windowsの場合、次のように表示されます。バージョン番号は�
 git version ○.○○.○.windows.○
 //}
 
-Macの場合も、まずVS Codeの「表示」＞「ターミナル」を開いて、@<tt>{git --version}を実行してください。「gitコマンドを使用するにはコマンドライン・デベロッパーツールが必要です」のようにインストールを促す画面が出たら、そのままインストールします。次のようにバージョン情報が表示されれば準備完了です。
+===== Macの場合
+
+まずVS Codeの「表示」＞「ターミナル」を開いて、@<tt>{git --version}を実行してください。「gitコマンドを使用するにはコマンドライン・デベロッパーツールが必要です」のようにインストールを促す画面が出たら、そのままインストールします。次のようにバージョン情報が表示されればgitのインストールは完了です。
 
 //cmd{
 git version ○.○○.○ (Apple Git-○○○)
@@ -87,15 +93,18 @@ git version ○.○○.○ (Apple Git-○○○)
 
 GitHubアカウントは、GitHubで原稿を管理するために必要です。
 
-GitHubのサインアップページ（@<href>{https://github.com/signup}）からアカウントを作ります。この後で使用しますので、登録したユーザーネーム、メールアドレス、そしてパスワードを忘れないようにしてください。
+GitHubのサインアップページ（@<href>{https://github.com/signup}）からアカウントを作ります。この後で使用しますので、登録したユーザーネームとメールアドレス、そしてパスワードを忘れないようにしてください。
 
-GitHubのプロフィール設定ページ（@<href>{https://github.com/settings/profile}）を開いて、Name（名前）やProfile picture（プロフィール画像）を設定しておきましょう。
+アカウントを作ったら、GitHubのプロフィール設定ページ（@<href>{https://github.com/settings/profile}）を開いて、Name（名前）やProfile picture（プロフィール画像）を設定しておきましょう。
 
 ==== ghをインストールする
 
-@<tt>{gh}は、ターミナルからGitHubの操作をするために必要なコマンドです。GitHub CLI公式サイト（@<href>{https://cli.github.com/}）からダウンロードし、インストーラーの手順に従ってインストールします。
+@<tt>{gh}は、ターミナルからGitHubの操作をするために必要なコマンドです。GitHub CLI公式サイト（@<href>{https://cli.github.com/}）から自身の環境にあったインストーラーをダウンロードします（@<img>{bookathon-gh-download}）。
 
-ghのインストールができたら、VS Codeを一度閉じてから起動しなおしてください。起動したVS Codeの上部にあるメニューバーから「表示」＞「ターミナル」を選択して、ターミナルを表示させます。次のコマンドを入力してエンターを押します。
+//image[bookathon-gh-download][ghのダウンロード画面][scale=0.7]{
+//}
+
+インストーラーの手順に従って、ghをインストールします。ghのインストールができたら、VS Codeを一度閉じてから起動しなおしてください。起動したVS Codeの上部にあるメニューバーから「表示」＞「ターミナル」を選択して、ターミナルを表示させます。次のコマンドを入力してエンターを押します。
 
 //cmd{
 gh version
@@ -104,8 +113,8 @@ gh version
 次のようにバージョンが表示されたら、ghのインストールは完了です。これは表示例なので、バージョン番号や日付は異なっていても構いません。
 
 //cmd{
-gh version 2.87.3 (2026-02-23)
-https://github.com/cli/cli/releases/tag/v2.87.3
+gh version 2.103.3 (2026-10-26)
+https://github.com/cli/cli/releases/tag/v2.103.3
 //}
 
 ghコマンドが使えるようになったら、VS Codeのターミナルで次のコマンドを実行し、GitHubの認証をします。
@@ -124,7 +133,7 @@ gh auth login -h github.com -p https -w
 //image[bookathon-github-device-activation][GitHubのワンタイムコード入力画面][scale=0.6]{
 //}
 
-VS Codeのターミナルで「Logged in as ○○」と表示されたら、GitHubの認証も完了です。
+VS Codeのターミナルで「Logged in as ○○」と表示されたら、ghを使ったGitHubの認証も完了です。
 
 ==== gitコマンドでユーザー名とメールアドレスを設定する
 
@@ -141,6 +150,8 @@ VS Codeのターミナルで次のコマンドを実行して、ユーザーネ�
 git config --global user.name
 git config --global user.email
 //}
+
+===== Windowsの場合
 
 さらにWindowsの場合は、改行コードの自動変換によるエラーを防ぐため、改行コードの設定も行ってください。
 
@@ -206,7 +217,7 @@ VS Codeの左側のメニューにある「ソース管理」（枝分かれし�
 
 クローンしてきたリポジトリをどこに置くか聞かれるので、置き場所となるフォルダを指定して「リポジトリの宛先として選択」を押します（@<img>{bookathon-vscode-clone-destination}）。ここで指定したフォルダの中に@<tt>{sample-book}というフォルダが生成されて、その中にRe:VIEWのファイルが置かれます。
 
-//image[bookathon-vscode-clone-destination][クローン先のフォルダを選択する][scale=0.6]{
+//image[bookathon-vscode-clone-destination][クローン先のフォルダを選択する][scale=0.5]{
 //}
 
 指定したフォルダへのクローンが終わると「リポジトリを開きますか？」と表示されるので、「開く」をクリックします（@<img>{bookathon-vscode-open-repository}）。
@@ -219,10 +230,12 @@ VS Codeの左側に@<tt>{sample-book}フォルダの中身が表示されたら�
 //image[bookathon-vscode-repository-files][クローンしたリポジトリのファイル一覧][scale=0.35]{
 //}
 
-原稿のファイルは基本的に@<tt>{articles}フォルダの中にあります。早速、@<tt>{articles}フォルダの中にある著者紹介のファイル（@<tt>{contributors.re}）を開いてみましょう（@<img>{bookathon-vscode-contributors-file}）。ファイルの中の著者名やプロフィールを、自分のものに書き換えて保存します（@<img>{bookathon-vscode-edit-contributors}）。
+原稿のファイルは基本的に@<tt>{articles}フォルダの中にあります。早速、@<tt>{articles}フォルダの中にある著者紹介のファイル（@<tt>{contributors.re}）を開いてみましょう（@<img>{bookathon-vscode-contributors-file}）。
 
 //image[bookathon-vscode-contributors-file][articlesフォルダのcontributors.reを開く][scale=0.5]{
 //}
+
+著者紹介のファイルに書いてある著者名やプロフィールを、自分のものに書き換えて保存します（@<img>{bookathon-vscode-edit-contributors}）。
 
 //image[bookathon-vscode-edit-contributors][著者紹介を自分の名前とプロフィールに書き換える][scale=0.6]{
 //}
@@ -262,13 +275,17 @@ bash build-in-docker.sh
 
 @<tt>{ReVIEW-Template.pdf}を開いて、本の見た目になっているか確認してみましょう。
 
-==== ビルドに失敗するときのトラブルシューティング
+=== ビルドに失敗するときのトラブルシューティング
 
- : 「Docker Desktop is not running」と出る
-  Docker Desktopが起動されていません。起動してからもう一度ビルドしてみましょう。
+ビルドに失敗するときは、次のようなトラブルが考えられます。
 
- : PDFを削除できないという警告が出る
-  「Unable to delete」や「EACCES: permission denied」とともに@<tt>{articles/ReVIEW-Template.pdf}が表示される場合は、先ほど生成されたPDFファイルを開いたままで再度ビルドしようとして失敗している可能性があります。一旦PDFファイルを閉じてからビルドしてください。
+==== 「Docker Desktop is not running」と出る
+
+Docker Desktopが起動されていません。起動してからもう一度ビルドしてみましょう。
+
+==== PDFを削除できないという警告が出る
+
+「Unable to delete」や「EACCES: permission denied」とともに@<tt>{articles/ReVIEW-Template.pdf}が表示される場合は、先ほど生成されたPDFファイルを開いたままで再度ビルドしようとして失敗している可能性があります。一旦PDFファイルを閉じてからビルドしてください。
 
 === 原稿を書いてみよう
 
@@ -285,7 +302,7 @@ bash build-in-docker.sh
 //}
 
  : @<tt>{config.yml}
-  本のタイトルや著者名などの奥付を設定するファイルです。
+  本のタイトルや著者名といった奥付、本のサイズなどが設定できるファイルです。このファイルで設定することで、ビルドするPDFを「A5の電子版」や「B5の紙版（印刷用のトンボ付きデータ）」などに簡単に切り替えられます。
 
  : @<tt>{article.re}など（@<tt>{.re}ファイル）
   @<tt>{○○.re}が原稿のファイルです。1章につき1ファイルの対応でファイルを作成します。ファイルを作成したら、@<tt>{catalog.yml}にファイル名を書く必要があります。
@@ -294,11 +311,17 @@ bash build-in-docker.sh
 
 @<tt>{.re}ファイルでどんな風に書いたらPDFでどういう見た目になるのかについては、Re:VIEW フォーマットガイド（@<href>{https://github.com/kmuto/review/blob/master/doc/format.ja.md}）を参照してください。
 
-また、電子版が無料でダウンロードできる「LINE Botをつくってみよう ～APIを試して学んでしっかりわかる～」という本は、原稿のリポジトリがGitHubで公開されています。「この見た目にするには、@<tt>{.re}ファイルでどういう書き方をすればいいんだろう？」という逆引きに使ってみてください。
+また、筆者の「LINE Botをつくってみよう ～APIを試して学んでしっかりわかる～」という本は、電子版が無料でダウンロードできて、原稿のリポジトリもGitHubで公開されています。電子版の本とGitHubの原稿を見比べながら、「この見た目にするには、@<tt>{.re}ファイルでどういう書き方をすればいいんだろう？」という逆引きに使ってみてください。
 
  * 「LINE Botをつくってみよう」の原稿リポジトリ（@<href>{https://github.com/mochikoAsTech/startLINEBot}）
  * 「LINE Botをつくってみよう」電子版の無料ダウンロード（@<href>{https://techbookfest.org/product/qNMTjpz3LTvmfuE5fRgSZb}）
 
 == 技術書典に申し込んでみよう
 
-その先の申し込みは「届ける工夫」を参照。
+3日間のひとりBookathonで本が書けたら、次はその本を抱えて技術書典@<fn>{tbf}に参加してみましょう。
+
+//footnote[tbf][@<href>{https://techbookfest.org/}]
+
+技術書典に参加するときに何を準備してどんな風に申し込めばいいか、紙の本を印刷所に頼むにはどうしたらいいのか、などは筆者の「届ける工夫 ～欲しい誰かに見つけてもらえる67の方法～ 改訂第2版@<fn>{todokeru}」という本にまとめてあります。
+
+//footnote[todokeru][@<href>{https://techbookfest.org/product/47ALwiX8uAUTzZifisvYmD}]
