@@ -15,7 +15,7 @@
 
 ==== Hikaru Wakamatsu
 
-挿絵デザインを担当。
+販促物デザインを担当。
 
 ==== Shinya Nagashio
 
