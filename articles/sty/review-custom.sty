@@ -1,1 +1,6 @@
 % for user-defined macro
+
+% Use unnumbered chapter titles in back matter running heads.
+\renewcommand{\reviewbackmatterhook}{%
+  \backmatter
+  \renewcommand{\chaptermark}[1]{\markboth{##1}{##1}}}

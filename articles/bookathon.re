@@ -36,7 +36,7 @@ GitHubとRe:VIEWを使うために必要な5つの道具を準備しておきま
  2. git
  3. GitHubアカウント
  4. gh
- 5. Docker
+ 5. Docker Desktop
 
 お手元の環境で、それぞれの道具が既に使える状態であれば、該当するセクションは読み飛ばして構いません。
 
@@ -99,12 +99,14 @@ GitHubのサインアップページ（@<href>{https://github.com/signup}）か�
 
 ==== ghをインストールする
 
-@<tt>{gh}は、ターミナルからGitHubの操作をするために必要なコマンドです。GitHub CLI公式サイト（@<href>{https://cli.github.com/}）のプルダウンで自分の環境を選ぶと、その環境に合わせたインストール用のコマンドが表示されます（@<img>{bookathon-gh-download}）。
+@<tt>{gh}は、ターミナルからGitHubの操作をするために必要なコマンドです。GitHub CLI公式サイト（@<href>{https://cli.github.com/}）のプルダウンで自分の環境を選ぶと、その環境に合わせたインストール用のコマンドが表示されるのでコピーします（@<img>{bookathon-gh-download}）。
 
-//image[bookathon-gh-download][ghのダウンロード画面][scale=0.7]{
+//image[bookathon-gh-download][ghのインストール方法を選ぶ][scale=0.7]{
 //}
 
-インストーラーの手順に従って、ghをインストールします。ghのインストールができたら、VS Codeを一度閉じてから起動しなおしてください。起動したVS Codeの上部にあるメニューバーから「表示」＞「ターミナル」を選択して、ターミナルを表示させます。次のコマンドを入力してエンターを押します。
+VS Codeの「表示」＞「ターミナル」を開き、表示されたコマンドを貼り付けて実行します。
+
+ghのインストールができたら、VS Codeを一度閉じてから起動しなおしてください。「表示」＞「ターミナル」を選択し、次のコマンドを入力してエンターを押します。
 
 //cmd{
 gh version
@@ -172,7 +174,7 @@ Dockerを使うことで、Re:VIEW記法で書いた原稿からPDFを生成す�
 //image[bookathon-docker-download][Docker Desktopのダウンロード画面][scale=0.6]{
 //}
 
-インストーラーの手順に従って、Docker Desktopをインストールします。もしWindows環境で「WSL 2 installation is incomplete」と表示されて、WSL2のインストールを促す画面が出たら、そのままインストールしてください。
+インストーラーの手順に従って、Docker Desktopをインストールします。もしWindows環境で「WSL 2 installation is incomplete」と表示されて、WSL 2のインストールを促す画面が出たら、そのままインストールしてください。
 
 Docker Desktopのインストールが完了したら、Docker Desktopを起動します。
 
