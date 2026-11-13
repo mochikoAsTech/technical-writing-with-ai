@@ -332,3 +332,5 @@ Docker Desktopが起動されていません。起動してからもう一度ビ
 技術書典に参加するときに何を準備してどんな風に申し込めばいいか、紙の本を印刷所に頼むにはどうしたらいいのか、などは筆者の「届ける工夫 ～欲しい誰かに見つけてもらえる67の方法～ 改訂第2版@<fn>{todokeru}」という本にまとめてあります。
 
 //footnote[todokeru][@<href>{https://techbookfest.org/product/47ALwiX8uAUTzZifisvYmD}]
+
+次の技術書典で、あなたの本が読めるのを楽しみにしています！
